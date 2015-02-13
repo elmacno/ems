@@ -19,9 +19,9 @@ Movie.create(file_name: "John Wick.mp4", moviedb_id: 245891, watched: false)
 Show.delete_all
 (1..rand(5..15)).each do |show_id|
   show = Show.create(moviedb_id: show_id)
-  (1..rand(1..15)).each do |season_no|
+  (1..rand(5..15)).each do |season_no|
     season = Season.create(show_id: show.id, season_no: season_no)
-    (1..rand(1..24)).each do |episode_no|
+    (1..rand(10..24)).each do |episode_no|
       Episode.create(season_id: season.id, episode_no: episode_no, file_name: "show.s#{season_no}e#{episode_no}.mp4", watched: false)
     end
   end

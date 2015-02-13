@@ -1,6 +1,6 @@
 <h2>Series</h2>
 <ul>
   <% @show.seasons.each do |season| %>
-    <li>Season <%= season.season_no %></li>
+    <li><%= link_to "Season #{season.season_no}", "/shows/#{@show.moviedb_id}/#{season.season_no}" %></li>
   <% end %>
 </ul>

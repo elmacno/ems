@@ -1,3 +1,6 @@
-<h2>Show name should go here!<!--%= show_name(@show.moviedb_id) %--> - Season <%= @season.season_no %>, Episode <%= @episode.episode_no %></h2>
+<h2><%= get_show_name(@show.moviedb_id) %> - <%= get_episode_name(@show.moviedb_id, @season.season_no, @episode.episode_no) %></h2>
 
-<p>A este episodio <%= @episode.watched ? "" : "todavia no" %> lo miraste!</p>
+<p>
+  A este episodio <%= @episode.watched ? "" : "todavia no" %> lo miraste!
+  Hace click <%= link_to "aca", get_playable_url(@episode.file_name) %> para mirarla<%= @episode.watched ? "de nuevo" : "" %>!
+</p>
