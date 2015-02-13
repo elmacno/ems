@@ -1,0 +1,6 @@
+<h2>Todas las peliculas</h2>
+<ul>
+  <% @movies.each do |movie| %>
+    <li><%= link_to get_movie_name(movie.moviedb_id), "movies/#{movie.moviedb_id}" %> - <%= movie.watched ? "Mirada" : "No mirada" %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,8 @@
+<h2><%= get_movie_name(@movie.moviedb_id) %></h2>
+
+<%= image_tag("#{@moviedb_config.base_url}w154#{get_movie_poster_path(@movie.moviedb_id)}") %>
+
+<p>
+  A esta pelicula <%= @movie.watched ? "" : "todavia no" %> la miraste!
+  Hace click <%= link_to "aca", get_playable_url(@movie.file_name) %> para mirarla<%= @movie.watched ? "de nuevo" : "" %>!
+</p>

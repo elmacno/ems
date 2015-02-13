@@ -1,0 +1,6 @@
+<h2>Show name should go here!<!--%= show_name(@show.moviedb_id) %--> - Season <%= @season.season_no %></h2>
+<ul>
+  <% @season.episodes.each do |episode| %>
+    <li>Episode <%= episode.episode_no %> - <%= episode.watched ? "Mirado" : "No mirado" %></li>
+  <% end %>
+</ul>
