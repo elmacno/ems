@@ -4,5 +4,5 @@
 
 <p>
   A esta pelicula <%= @movie.watched ? "" : "todavia no" %> la miraste!
-  Hace click <%= link_to "aca", get_playable_url(@movie.file_name) %> para mirarla<%= @movie.watched ? "de nuevo" : "" %>!
+  Hace click <%= link_to "aca", get_playable_movie_url(@movie.file_name) %> para mirarla<%= @movie.watched ? "de nuevo" : "" %>!
 </p>

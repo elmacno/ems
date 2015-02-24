@@ -46,3 +46,5 @@ end
 gem 'themoviedb'
 
 gem 'puma'
+
+gem 'paginate'

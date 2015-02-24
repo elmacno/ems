@@ -1,6 +1,7 @@
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.all.order(:file_name)
+    #@movies = Movie.all.order(:file_name)
+    @movies = Movie.paginate(page: params[:p])
   end
 
   def show

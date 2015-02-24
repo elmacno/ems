@@ -9,7 +9,7 @@ module MoviesHelper
     movie["poster_path"]
   end
 
-  def get_playable_url(file_name)
-    "smb://192.168.1.2/nas/Peliculas/#{file_name}"
+  def get_playable_movie_url(file_name)
+    "smb://192.168.1.2/nas/Media/Movies/#{file_name}"
   end
 end

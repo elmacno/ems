@@ -1,0 +1,6 @@
+<%= link_to("movies/#{movie.moviedb_id}") do %>
+  <div class='movie'>
+    <%= image_tag("#{@moviedb_config.base_url}w154#{get_movie_poster_path(movie.moviedb_id)}") %>
+    <!--p><%=get_movie_name(movie.moviedb_id)%></p-->
+  </div>
+<% end %>

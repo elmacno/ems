@@ -21,3 +21,9 @@
 
 en:
   hello: "Hello world"
+
+  paginate:
+    next: ">>"
+    previous: "<<"
+    page: "%{page}"
+    more: "More"

@@ -9,7 +9,7 @@ module ShowsHelper
     "#{episode["name"]} (S#{season_no}E#{episode_no})"
   end
 
-  def get_playable_url(file_name)
-    "smb://192.168.1.2/nas/Series/#{file_name}"
+  def get_playable_show_url(file_name)
+    "smb://192.168.1.2/nas/Media/Tv%20Shows/#{file_name}"
   end
 end

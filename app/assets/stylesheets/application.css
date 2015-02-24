@@ -13,3 +13,47 @@
  *= require_tree .
  *= require_self
  */
+
+body
+{
+  background-color: #99CCFF;
+}
+
+header
+{
+  background-color: #FFFFFF;
+  padding: 1em;
+  text-align: center;
+}
+
+section
+{
+  background-color: #FFFFFF;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+footer
+{
+  background-color: #FFFFFF;
+  padding: 1em;
+  text-align: center;
+}
+
+a:link {
+  color: #000000;
+}
+
+a:visited {
+  color: #000000;
+}
+
+a:hover {
+  color: #000000;
+}
+
+a:active {
+  color: #000000;
+}

@@ -8,5 +8,10 @@ class ApplicationController < ActionController::Base
 
   def set_config
     @moviedb_config = Tmdb::Configuration.new
+
+    Paginate.configure do |config|
+      config.size = 5
+      config.param_name = :p
+    end
   end
 end

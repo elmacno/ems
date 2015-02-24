@@ -1,3 +1,40 @@
 // Place all the styles related to the Movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.movie
+{
+  background-color: rgb(225, 225, 225);
+  display: inline-block;
+  width: 154px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius:10px; 
+  -webkit-border-radius: 10px;
+}
+
+.paginate
+{
+  display: block;
+  overflow: hidden;
+  list-style-type: none;
+}
+.paginate li
+{
+  display: inline-block;
+}
+.paginate li.previous-page:after
+{
+  content: "«";
+  padding: 0 5px;
+}
+.paginate li.next-page:before
+{
+  content: "»";
+  padding: 0 5px;
+}
+.paginate .disabled
+{
+  display: none;
+}
